@@ -26,7 +26,7 @@ SendContextRegistration = 1
 # Send automatic time packets every second if client is connected (Default: 0)
 # SendMessageTime = 0
 
-# Set ECU ID (Default: ECU1)
+# Set ECU ID (Default: VM5-PassiveNode2)
 ECUId = PassiveNode2
 
 # Size of shared memory (Default: 100000)
