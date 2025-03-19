@@ -1,1 +1,38 @@
-dlt.conf
+dlt.conf PassiveNode2
+# Configuration file of DLT daemon
+#
+# Configurations made here will overwrite settings by command line
+
+########################################################################
+# General configuration                                                #
+########################################################################
+
+# Start daemon in debug mode, so that all internal debug information is printed out on the console
+# Verbose = 1
+
+# Daemonize DLT daemon, if it is started as daemon
+# Daemonize = 1
+
+# Send DLT messages with serial header
+# SendSerialHeader = 1
+
+# Send automatic get log info response during context registration
+SendContextRegistration = 1
+
+# Option of get log info response during context registration (Default: 7)
+# Apid and Ctid Only = 3, with LogLevel = 4, with TraceStatus = 5, with LL and TS = 6, with LL, TS, and Description = 7
+# SendContextRegistrationOption = 7
+
+# Send automatic time packets every second if client is connected (Default: 0)
+# SendMessageTime = 0
+
+# Set ECU ID (Default: VM5-PassiveNode2)
+ECUId = PassiveNode2
+
+# Size of shared memory (Default: 100000)
+SharedMemorySize = 100000
+
+# Directory where to store the persistant configuration (Default: /tmp)
+# PersistanceStoragePath = /tmp
+
+
